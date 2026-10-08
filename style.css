@@ -1,7 +1,7 @@
 :root{--bg:#0b3480;--ink:#eaf1ff;--dim:#a9c0ec;--line:rgba(234,241,255,.3);--y:#ffd24a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;color:var(--ink);background:var(--bg) linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px) 0 0/44px 44px,linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px) 0 0/44px 44px;font:17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+body{margin:0;color:var(--ink);background-color:var(--bg);background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:44px 44px;font:17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
 a{color:var(--ink)}
 a:focus-visible{outline:3px solid var(--y);outline-offset:3px}
 .top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:14px max(20px,calc((100vw - 1100px)/2 + 20px));background:rgba(11,52,128,.94);border-bottom:1px solid var(--line)}
