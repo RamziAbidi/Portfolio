@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ramzi Abidi — Robotic and Automation Engineer</title>
 <meta name="description" content="Portfolio of Ramzi Abidi, robotic and automation engineer: PLC, industrial robots, ROS 2, computer vision.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&family=Syne:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,19 +18,30 @@
 <main id="top">
 <section class="hero">
   <div class="hero-text">
-    <h1>Ramzi Abidi</h1>
-    <p class="role">Robotic and automation engineer</p>
-    <p class="lead">I commission production machines for a living and build robots for fun. Four years of Beckhoff PLC and industrial robot work across India, Spain, Algeria and Morocco, plus a master's in advanced robotics and AI.</p>
-    <p class="hint">Move your cursor: the arm is a two-link SCARA solving inverse kinematics live.</p>
+    <h1>Robotics<br>Automation<br><span>Engineer.</span></h1>
+    <p class="tagline">I commission machines, I build robots.</p>
+    <div class="cta">
+      <a class="btn" href="#projects">View my work</a>
+      <a class="btn ghost" href="assets/Ramzi_Abidi_CV.pdf" download>Download CV</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <div class="chips">
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/YOUR-GITHUB-USERNAME" rel="noopener">GitHub</a>
+    </div>
+    <p class="status">Now commissioning automated assembly machines at Mondragon Assembly. Open to robotics roles.</p>
   </div>
-  <svg id="arm" viewBox="0 0 400 320" role="img" aria-label="Interactive two-link SCARA robot arm that follows the cursor">
-    <rect x="140" y="268" width="120" height="14" fill="var(--ink)"/>
-    <line id="l1" stroke="var(--blue)" stroke-width="14" stroke-linecap="round"/>
-    <line id="l2" stroke="var(--ink)" stroke-width="10" stroke-linecap="round"/>
-    <circle id="j0" r="12" fill="var(--bg)" stroke="var(--ink)" stroke-width="4"/>
-    <circle id="j1" r="8" fill="var(--bg)" stroke="var(--ink)" stroke-width="4"/>
-    <circle id="tip" r="6" fill="var(--blue)"/>
-  </svg>
+  <figure class="card">
+    <svg id="arm" viewBox="0 0 400 320" role="img" aria-label="Interactive two-link SCARA robot arm that follows the cursor">
+      <rect x="130" y="235" width="140" height="12" rx="3" fill="#dfe8f2"/>
+      <line id="l1" stroke="#2fb3a0" stroke-width="14" stroke-linecap="round"/>
+      <line id="l2" stroke="#dfe8f2" stroke-width="10" stroke-linecap="round"/>
+      <circle id="j0" r="12" fill="#14274a" stroke="#dfe8f2" stroke-width="4"/>
+      <circle id="j1" r="8" fill="#14274a" stroke="#dfe8f2" stroke-width="4"/>
+      <circle id="tip" r="6" fill="#2fb3a0"/>
+    </svg>
+    <figcaption><b>Ramzi Abidi</b><span>Ariana, Tunisia</span><span class="mv">Move your cursor: live inverse kinematics</span></figcaption>
+  </figure>
 </section>
 
 <section id="about">
@@ -136,7 +149,7 @@
 <section id="contact">
   <h2>Contact</h2>
   <p>Open to robotics and automation roles. Based in Ariana, Tunisia.</p>
-  <p><a class="btn" href="mailto:ramzi.abidi995@gmail.com">Email me</a> <a class="btn alt" href="https://www.linkedin.com/in/ramzi-abidi/" rel="noopener">LinkedIn</a></p>
+  <p><a class="btn" href="mailto:ramzi.abidi995@gmail.com">Email me</a> <a class="btn ghost" href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" rel="noopener">LinkedIn</a></p>
 </section>
 </main>
 <footer>© <span id="yr"></span> Ramzi Abidi</footer>
