@@ -2,8 +2,8 @@
   document.getElementById('yr').textContent=new Date().getFullYear();
   var svg=document.getElementById('arm');
   var $=function(i){return document.getElementById(i)};
-  var bx=200,by=268,L1=120,L2=95;
-  var tx=290,ty=120;
+  var bx=200,by=235,L1=115,L2=90;
+  var tx=290,ty=110;
   function draw(x,y){
     var dx=x-bx,dy=y-by,d=Math.hypot(dx,dy);
     d=Math.min(Math.max(d,Math.abs(L1-L2)+1),L1+L2-1);
