@@ -13,7 +13,7 @@ nav a:hover{color:var(--y)}
 main,footer{max-width:1100px;margin:0 auto;padding:0 20px}
 section{padding:56px 0;border-bottom:1px solid var(--line)}
 h1,h2{font-family:"Big Shoulders Display",Impact,sans-serif;font-weight:800;margin:0}
-h1{font-size:clamp(56px,9vw,110px);line-height:.9;letter-spacing:.01em;text-transform:uppercase;margin-bottom:22px}
+h1{font-size:clamp(44px,7vw,84px);line-height:.9;letter-spacing:.01em;text-transform:uppercase;margin-bottom:22px}
 h2{display:flex;align-items:center;gap:16px;font-size:40px;text-transform:uppercase;margin-bottom:28px}
 h2::after{content:"";flex:1;height:1px;background:var(--ink);opacity:.6}
 h3{font-size:19px;margin:0 0 6px}
