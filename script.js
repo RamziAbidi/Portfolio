@@ -16,6 +16,8 @@
     var fx=ex+L2*Math.cos(ang),fy=ey+L2*Math.sin(ang);
     set('l1',bx,by,ex,ey);set('l2',ex,ey,fx,fy);
     pos('j0',bx,by);pos('j1',ex,ey);pos('tip',fx,fy);
+    var t1=Math.round(-s*180/Math.PI),t2=Math.round(-(ang-s)*180/Math.PI);
+    $('ro').textContent='θ1 '+t1+'°  θ2 '+t2+'°  x '+Math.round(fx-bx)+'  y '+Math.round(by-fy);
   }
   function set(i,a,b,c,d){var e=$(i);e.setAttribute('x1',a);e.setAttribute('y1',b);e.setAttribute('x2',c);e.setAttribute('y2',d)}
   function pos(i,x,y){var e=$(i);e.setAttribute('cx',x);e.setAttribute('cy',y)}
