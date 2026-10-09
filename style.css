@@ -58,8 +58,8 @@ footer{padding:28px 20px;color:var(--dim);font-size:14px}
 .pcard::before{content:"";position:absolute;top:0;left:0;width:110px;height:2px;background:linear-gradient(90deg,var(--y),transparent);box-shadow:0 0 12px var(--y);transition:width .4s;z-index:2}
 .pcard:hover::before{width:100%}
 .pnum{font:12px "IBM Plex Mono",monospace;letter-spacing:.1em;color:var(--y);padding:14px 18px;border-bottom:1px solid var(--line)}
-.slider{position:relative;aspect-ratio:2.3/1;background:#060d18;border-bottom:1px solid var(--line)}
-.slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s}
+.slider{position:relative;aspect-ratio:4/3;background:#060d18;border-bottom:1px solid var(--line)}
+.slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .3s}
 .slider img.on{opacity:1}
 .slider .prev,.slider .next{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:rgba(10,20,36,.75);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
 .slider .prev{left:8px}.slider .next{right:8px}
