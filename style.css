@@ -50,7 +50,7 @@ figcaption b{color:var(--ink);font-size:15px}
 footer{padding:28px 20px;color:var(--dim);font-size:14px}
 .withimg:not(.noimg){display:grid;grid-template-columns:1fr 280px;gap:24px;align-items:start}
 .withimg img{width:100%;height:auto;border:2px solid var(--ink);display:block}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:14px}
 .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border:2px solid var(--ink);display:block}
 @media(max-width:800px){.withimg:not(.noimg){grid-template-columns:1fr}.hero{grid-template-columns:1fr}.skills{grid-template-columns:1fr;gap:2px}.skills dd{margin-bottom:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
