@@ -52,5 +52,26 @@ footer{padding:28px 20px;color:var(--dim);font-size:14px}
 .withimg img{width:100%;height:auto;border:2px solid var(--ink);display:block}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:14px}
 .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border:2px solid var(--ink);display:block}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.pcard{display:flex;flex-direction:column;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.pcard:hover{border-color:var(--y)}
+.pnum{font:14px "IBM Plex Mono",monospace;letter-spacing:.08em;color:var(--y);padding:16px 20px}
+.slider{position:relative;aspect-ratio:16/10;background:#060d18;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s}
+.slider img.on{opacity:1}
+.slider .prev,.slider .next{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:rgba(10,20,36,.75);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
+.slider .prev{left:8px}.slider .next{right:8px}
+.slider .prev:hover,.slider .next:hover{border-color:var(--y);color:var(--y)}
+.slider button:focus-visible{outline:3px solid var(--y)}
+.dots{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:6px}
+.dot{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid var(--ink);background:rgba(10,20,36,.6);cursor:pointer}
+.dot.on{background:var(--y);border-color:var(--y)}
+.slider [hidden]{display:none}
+.pbody{display:flex;flex-direction:column;gap:10px;padding:20px;flex:1}
+.pmeta{font:13px "IBM Plex Mono",monospace;color:var(--dim)}
+.pbody h3{font:800 26px/1.1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;margin:0}
+.pbody p{margin:0;color:var(--dim);font-size:16px}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:auto 0 0;padding:8px 0 0}
+.chips li{font:12px "IBM Plex Mono",monospace;padding:4px 10px;border:1px solid rgba(255,201,51,.5);border-radius:4px;color:var(--y)}
 @media(max-width:800px){.withimg:not(.noimg){grid-template-columns:1fr}.hero{grid-template-columns:1fr}.skills{grid-template-columns:1fr;gap:2px}.skills dd{margin-bottom:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
