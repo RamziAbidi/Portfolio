@@ -75,5 +75,7 @@ footer{padding:28px 20px;color:var(--dim);font-size:14px}
 .pbody p{margin:0;color:var(--dim);font-size:14px;line-height:1.55}
 .chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:auto 0 0;padding:6px 0 0}
 .chips li{font:11px "IBM Plex Mono",monospace;padding:3px 8px;border:1px solid rgba(255,201,51,.5);border-radius:4px;color:var(--y);background:rgba(255,201,51,.07)}
+.pbtn{align-self:flex-start;margin-top:10px;padding:8px 14px;border:1px solid var(--y);border-radius:4px;color:var(--y);font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+.pbtn:hover{background:var(--y);color:#0a1424}
 @media(max-width:800px){.withimg:not(.noimg){grid-template-columns:1fr}.hero{grid-template-columns:1fr}.skills{grid-template-columns:1fr;gap:2px}.skills dd{margin-bottom:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
